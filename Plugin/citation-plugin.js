@@ -12,9 +12,9 @@ const withNode = document.getElementById("with");
  * @return {string} The citation
  */
 document.getElementById("leftpad-form").addEventListener("submit", (e) => {
-    e.preventDefault();
-    var gettingCurrent = browser.tabs.query({active: true});
-    gettingCurrent.then(citationGeneration).catch(onError);
+  e.preventDefault();
+  var gettingCurrent = browser.tabs.query({active: true});
+  gettingCurrent.then(citationGeneration).catch(onError);
 }, false);
 
 function citationGeneration(tabInfo) {
@@ -23,13 +23,12 @@ function citationGeneration(tabInfo) {
   formatOptions.url = tabInfo[0].url;
   formatOptions.style = CitationCore.styles.apa;
   CitationCore.generate(formatOptions, (citationStr, errors) => {
-  // Handle completion of citation generation 
-  console.log(citationStr);
-  resultNode.value = citationStr;
+    // Handle completion of citation generation 
+    console.log(citationStr);
+    resultNode.value = citationStr;
   });
 }
 
 function onError(error) {
-  // console.log("error occured");
   console.log(`Error: ${error}`);
 }

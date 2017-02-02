@@ -12,9 +12,6 @@
         "default_popup": "citation-plugin.html",
         "browser_style": true
     },
-    "background": {
-        "scripts": ["background_scripts/index.js"]
-    },
     "permissions": [
         "*://developer.mozilla.org/*",
         "tabs"
