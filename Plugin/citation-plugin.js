@@ -22,11 +22,11 @@ function onGot(tabInfo) {
   formatOptions.style = CitationCore.styles.apa;
   CitationCore.generate(formatOptions, (citationStr, errors) => {
     // Handle completion of citation generation 
+    // console.log(citationStr);
+    // if(errors === undefined) {
     console.log(citationStr);
-    if(errors === undefined) {
-        console.log(citationStr);
-        resultNode.value = citationStr;
-    }
+    resultNode.value = citationStr;
+    // }
   });
 }
 
