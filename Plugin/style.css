@@ -7,10 +7,6 @@ body {
     overflow-x: hidden;
 }
 
-.panel-formElements-item label {
-    width: 80px;
-}
-
 .panel-formElements-item output,
 .panel-formElements-item input[type="number"] {
     flex-grow: 1;
