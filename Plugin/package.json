@@ -1,0 +1,25 @@
+{
+  "name": "citation-plugin",
+  "version": "0.0.1",
+  "description": "A browser based tool for generating citations",
+  "main": "citation-plugin.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mozillascience/citation-plugin.git"
+  },
+  "keywords": [
+    "citation"
+  ],
+  "author": "Samuel Mosher",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mozillascience/citation-plugin/issues"
+  },
+  "homepage": "https://github.com/mozillascience/citation-plugin#readme",
+  "dependencies": {
+    "citation-core": "1.0.0"
+  }
+}
