@@ -12,6 +12,10 @@ body {
     flex-grow: 1;
 }
 
+.outputTextArea {
+    resize:none;
+}
+
 input[type="number"] {
     background-color: #fff;
     border: 1px solid #b1b1b1;

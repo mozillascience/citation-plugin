@@ -8,7 +8,7 @@
     },
     "browser_action": {
         "default_icon": "icons/cite-placeholder-32.png",
-        "default_title": "Left Pad",
+        "default_title": "Cite This",
         "default_popup": "citation-plugin.html",
         "browser_style": true
     },
