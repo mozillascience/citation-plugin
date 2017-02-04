@@ -5,8 +5,12 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body class="panel">
-        <form id="leftpad-form">
+        <form id="citation-form">
             <section class="panel-section panel-section-formElements">
+                <div class="panel-formElements-item">
+                    <label for="citation-URL">Search URL</label>
+                    <input type="text" id="citation-URL">
+                </div>
                 <div class="panel-formElements-item">
                     <label for="result">Result:</label>
                     <textArea disabled="true" class="outputTextArea" id="result"></textArea>
@@ -14,7 +18,7 @@
             </section>
             <footer class="panel-section panel-section-footer">
                 <button type="submit" class="panel-section-footer-button default">Cite!</button>
-                <div class="panel-section-footer-separator"></div>
+                <div class="panel-section-footer-separator selectable"></div>
             </footer>
         </form>
         <script src="index.js"></script>

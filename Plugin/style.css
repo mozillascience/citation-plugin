@@ -35,6 +35,12 @@ input[type="number"]:focus {
     border-color: #0996f8;
     box-shadow: 0 0 0 2px rgba(97, 181, 255, 0.75);
 }
+.result{
+    -moz-user-select: text;
+    -khtml-user-select: text;
+    -webkit-user-select: text;
+    -o-user-select: text;
+}
 
 /* Reset the default styles for buttons if it's a footer button */
 button.panel-section-footer-button {

@@ -1,9 +1,7 @@
 const CitationCore = require("citation-core");
 
 const resultNode = document.getElementById("result");
-const textNode = document.getElementById("text");
-const amountNode = document.getElementById("amount");
-const withNode = document.getElementById("with");
+const textNode = document.getElementById("citation-URL");
 
 /**
  * Get the current tabs url, then send it via a promise to citation generation.
@@ -11,25 +9,37 @@ const withNode = document.getElementById("with");
  * button return the correct citation.
  * @return {string} The citation
  */
-document.getElementById("leftpad-form").addEventListener("submit", (e) => {
-    e.preventDefault();
+document.getElementById("citation-form").addEventListener("submit", (e) => {
+  e.preventDefault();
+  console.log(textNode.value)
+  if (textNode.value === "") {
+    console.log("in can handle")
     var gettingCurrent = browser.tabs.query({active: true});
-    gettingCurrent.then(citationGeneration).catch(onError);
+    gettingCurrent.then(generationHelper).catch(onError);
+  }
+  else {
+    console.log(textNode.value);
+    citationGeneration(textNode.value);
+  }
+
 }, false);
+
+function generationHelper(browserURL) {
+  citationGeneration(browserURL[0].url)
+}
 
 function citationGeneration(tabInfo) {
   let formatOptions = new CitationCore.FormatOptions();
-  console.log(tabInfo[0].url);
-  formatOptions.url = tabInfo[0].url;
+  console.log(tabInfo);
+  formatOptions.url = tabInfo;
   formatOptions.style = CitationCore.styles.apa;
   CitationCore.generate(formatOptions, (citationStr, errors) => {
-  // Handle completion of citation generation 
-  console.log(citationStr);
-  resultNode.value = citationStr;
+    // Handle completion of citation generation 
+    console.log(citationStr);
+    resultNode.value = citationStr;
   });
 }
 
 function onError(error) {
-  // console.log("error occured");
   console.log(`Error: ${error}`);
 }
