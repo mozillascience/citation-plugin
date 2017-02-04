@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "Software Citation Tools Plugin",
+    "version": "1.0.0",
+    "description": "A demo for the Software Citation Tools Plugin",
+    "icons": {
+        "32": "icons/cite-placeholder-32.png"
+    },
+    "browser_action": {
+        "default_icon": "icons/cite-placeholder-32.png",
+        "default_title": "Left Pad",
+        "default_popup": "citation-plugin.html",
+        "browser_style": true
+    },
+    "permissions": [
+        "*://developer.mozilla.org/*",
+        "tabs"
+    ]
+}
