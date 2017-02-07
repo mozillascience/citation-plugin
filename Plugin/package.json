@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/mozillascience/citation-plugin#readme",
   "dependencies": {
-    "citation-core": "1.0.0"
+    "citation-core": "1.0.1"
   }
 }
