@@ -1,6 +1,7 @@
 const CitationCore = require("citation-core");
 
 const resultNode = document.getElementById("result");
+const citationFormatsNode = document.getElementById("citationFormats");
 const textNode = document.getElementById("citation-URL");
 
 /**
@@ -24,6 +25,15 @@ document.getElementById("citation-form").addEventListener("submit", (e) => {
 
 }, false);
 
+
+//Add all the styles to the styles dropdown
+for(style in CitationCore.styles){
+	let newElement = document.createElement("option");
+	newElement.innerHTML = style;
+	newElement.value = style;
+	citationFormatsNode.appendChild(newElement);	
+}
+
 function generationHelper(browserURL) {
   citationGeneration(browserURL[0].url)
 }
@@ -32,7 +42,11 @@ function citationGeneration(tabInfo) {
   let formatOptions = new CitationCore.FormatOptions();
   console.log(tabInfo);
   formatOptions.url = tabInfo;
-  formatOptions.style = CitationCore.styles.apa;
+
+  let selectedStyleIndex = citationFormatsNode.selectedIndex;
+  let selectedStyle = citationFormatsNode.options[selectedStyleIndex].value;
+
+  formatOptions.style = CitationCore.styles[selectedStyle];
   CitationCore.generate(formatOptions, (citationStr, errors) => {
     // Handle completion of citation generation 
     console.log(citationStr);
