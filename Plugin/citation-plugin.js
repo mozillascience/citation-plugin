@@ -27,9 +27,8 @@ function onError(error) {
 
 /**
  * Get the current tabs url, then send it via a promise to citation generation.
- * @param  {string} On click of the cite
- * button return the correct citation.
- * @return {string} The citation
+ * @param  {string} On click of the cite button return the correct citation.
+ * @return {string} The string representation of the citation
  */
 document.getElementById('citation-form').addEventListener('submit', (e) => {
   e.preventDefault();
