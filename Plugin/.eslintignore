@@ -1,6 +1,5 @@
 
 /node_modules/*
-/utils/array.js
 **/*.html
 **/*.md
 **/*.json
