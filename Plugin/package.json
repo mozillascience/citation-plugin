@@ -4,7 +4,10 @@
   "description": "A browser based tool for generating citations",
   "main": "citation-plugin.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "./node_modules/browserify/bin/cmd.js citation-plugin.js -o index.js",
+    "build": "./node_modules/browserify/bin/cmd.js citation-plugin.js -o index.js"
+    
   },
   "repository": {
     "type": "git",
@@ -23,6 +26,7 @@
     "citation-core": "1.0.1"
   },
   "devDependencies": {
+    "browserify": "^14.0.0",
     "eslint": "^3.13.1",
     "eslint-config-airbnb-base": "^11.0.1",
     "eslint-plugin-import": "^2.2.0"
