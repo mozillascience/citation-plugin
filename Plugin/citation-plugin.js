@@ -7,7 +7,7 @@ const textNode = document.getElementById('citation-URL');
 /**
  * Generates the citation based on the link that is passed in from tab info.
  * @param  {String} tabInfo - The url passed in as a string
- * @return {String} citationStr The citation is returned as a string        
+ * @return {String} citationStr The citation is returned as a string
  */
 function citationGeneration(tabInfo) {
   const formatOptions = new CitationCore.FormatOptions();
