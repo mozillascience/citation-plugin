@@ -6,23 +6,22 @@
     </head>
     <body class="panel">
         <form id="citation-form">
-            <section class="panel-section panel-section-formElements">
-                <div class="panel-formElements-item">
-                    <label for="citation-URL">Search URL</label>
-                    <input type="text" id="citation-URL">
-                </div>
+                <table>
+                  <tr>
+                    <td><label for="citation-URL">Search URL</label></td>
+                    <td><input type="text" style="width:100%;" id="citation-URL"></td>
+                  </tr>
 
-		<div class="panel-formElements-item">
-			<label for="citationFormats">Citation Format</label>
-			<select id="citationFormats"></select>
-		</div>
+                  <tr>
+                    <td><label for="citationFormats">Citation Format</label></td>
+                    <td><select style="width:100%" id="citationFormats"></select></td>
+                  </tr>
 
-                <div class="panel-formElements-item">
-                    <label for="result">Result:</label>
-                    <textArea disabled="true" class="outputTextArea" id="result"></textArea>
-                </div>
-
-            </section>
+                  <tr>
+                    <td><label for="result">Result:</label></td>
+                    <td><textArea class="outputTextArea" id="result"></textArea></td>
+                </tr>
+              <table>
             <footer class="panel-section panel-section-footer">
                 <button type="submit" class="panel-section-footer-button default">Cite!</button>
                 <div class="panel-section-footer-separator selectable"></div>

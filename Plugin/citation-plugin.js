@@ -4,6 +4,11 @@ const resultNode = document.getElementById('result');
 const citationFormatsNode = document.getElementById('citationFormats');
 const textNode = document.getElementById('citation-URL');
 
+/**
+ * Generates the citation based on the link that is passed in from tab info.
+ * @param  {String} tabInfo - The url passed in as a string
+ * @return {String} citationStr The citation is returned as a string        
+ */
 function citationGeneration(tabInfo) {
   const formatOptions = new CitationCore.FormatOptions();
   const selectedStyleIndex = citationFormatsNode.selectedIndex;
@@ -17,10 +22,18 @@ function citationGeneration(tabInfo) {
   });
 }
 
+/**
+ * A helper to get the url from the tab info if there is no user entered url.
+ * @param  {List} browserURL - Contains a list of objects that hold the tab information.
+ */
 function generationHelper(browserURL) {
   citationGeneration(browserURL[0].url);
 }
 
+/**
+ * Error handler
+ * @param  {Error[]} error - The error if there is one that occurs during operation.
+ */
 function onError(error) {
   throw new Error(`Error: ${error}`);
 }
