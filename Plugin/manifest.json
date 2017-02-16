@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "Software Citation Tools Plugin",
     "version": "1.0.0",
-    "description": "A demo for the Software Citation Tools Plugin",
+    "description": "The Software Citation Tools Plugin",
     "icons": {
         "32": "icons/cite-placeholder-32.png"
     },

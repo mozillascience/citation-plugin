@@ -1,6 +1,6 @@
 {
   "name": "citation-plugin",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A browser based tool for generating citations",
   "main": "citation-plugin.js",
   "scripts": {
@@ -16,7 +16,7 @@
   "keywords": [
     "citation"
   ],
-  "author": "Samuel Mosher",
+  "author": ["Eric Lee <nokeeo@me.com>", "Robert Lowe <rdl8212@rit.edu>", "Colin O'Neill <cmo6720@rit.edu>", "Samuel Mosher <sam1360@rit.edu>", "mozillafoundation"],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/mozillascience/citation-plugin/issues"
