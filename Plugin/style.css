@@ -12,6 +12,10 @@ body {
     flex-grow: 1;
 }
 
+.panel-formElements-item{
+    width:100%;
+}
+
 .outputTextArea {
     height:160px;
     width:350px;
@@ -46,5 +50,6 @@ input[type="number"]:focus {
 
 /* Reset the default styles for buttons if it's a footer button */
 button.panel-section-footer-button {
+    background-color: #28A75F;
     padding: 12px;
 }
