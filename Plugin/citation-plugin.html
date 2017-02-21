@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="panel">
+        <form id="citation-form">
+                <table>
+                  <tr>
+                    <td><label for="citation-URL">Search URL</label></td>
+                    <td><input class="panel-formElements-item" type="text" id="citation-URL"></td>
+                  </tr>
+
+                  <tr>
+                    <td><label for="citationFormats">Citation Format</label></td>
+                    <td><select class="panel-formElements-item" id="citationFormats"></select></td>
+                  </tr>
+
+                  <tr>
+                    <td><label for="result">Result:</label></td>
+                    <td><textArea class="outputTextArea" id="result"></textArea></td>
+                </tr>
+              <table>
+
+            <footer class="panel-section panel-section-footer">
+                <button type="submit" class="panel-section-footer-button default">Cite!</button>
+                <div class="panel-section-footer-separator selectable"></div>
+            </footer>
+        </form>
+        <script src="index.js"></script>
+    </body>
+</html>

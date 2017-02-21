@@ -1,0 +1,34 @@
+{
+  "name": "citation-plugin",
+  "version": "1.0.0",
+  "description": "A browser based tool for generating citations",
+  "main": "citation-plugin.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "./node_modules/browserify/bin/cmd.js citation-plugin.js -o index.js",
+    "build": "./node_modules/browserify/bin/cmd.js citation-plugin.js -o index.js"
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mozillascience/citation-plugin.git"
+  },
+  "keywords": [
+    "citation"
+  ],
+  "author": ["Eric Lee <nokeeo@me.com>", "Robert Lowe <rdl8212@rit.edu>", "Colin O'Neill <cmo6720@rit.edu>", "Samuel Mosher <sam1360@rit.edu>", "mozillafoundation"],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mozillascience/citation-plugin/issues"
+  },
+  "homepage": "https://github.com/mozillascience/citation-plugin#readme",
+  "dependencies": {
+    "citation-core": "1.0.1"
+  },
+  "devDependencies": {
+    "browserify": "^14.0.0",
+    "eslint": "^3.13.1",
+    "eslint-config-airbnb-base": "^11.0.1",
+    "eslint-plugin-import": "^2.2.0"
+  }
+}
